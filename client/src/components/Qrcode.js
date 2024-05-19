@@ -1,5 +1,4 @@
 import React from 'react';
-import QRCode from 'qrcode.react';
 import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-router-dom';
 
