@@ -97,7 +97,7 @@ function QRCodeScanner() {
   const handleSubmit = async () => {
     try {
       // Send request to backend
-      await axios.post("https://driver-qr.vercel.app/update-details", {
+      await axios.post("https://scanhubgen.vercel.app/update-details", {
         uniqueIdentifier: uniqueNumber,
         userDetails: infoData,
       });
@@ -153,9 +153,9 @@ function QRCodeScanner() {
 
   return (
     <div style={{ overflow: "hidden",minHeight:'100vh' }}>
-      <nav className="navbar" style={{ backgroundColor: 'black', padding: '6px',display:'flex', alignItems:'center',zIndex:'100', justifyContent:'center',position:'sticky',top:'0',flexDirection:'column',boxShadow: "0 0 10px rgba(255, 255, 0, 0.9)", }}>
+      <nav className="navbar" style={{ backgroundColor: '#333', padding: '6px',display:'flex', alignItems:'center',zIndex:'100', justifyContent:'center',position:'sticky',top:'0',flexDirection:'column',boxShadow: "0 0 10px rgba(255, 255, 0, 0.9)", }}>
           <div className="left-section">
-          <img className='logo' src={logo} alt='logo' style={{ height: '60px', width: '130px' }} />
+            <h1 style={{padding:'30px 0'}}>ScanHubGen</h1>
           </div>
           {/* <div style={{ display: 'flex', marginLeft: '10px', display: 'inline-block' }}>
               <span className="powered-by">
