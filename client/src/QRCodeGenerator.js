@@ -31,7 +31,7 @@ function QRCodeGenerator() {
 
   const handleGenerateQRCode = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/generate-qrcode', {
+      const response = await axios.post('https://scanhubgen.vercel.app/generate-qrcode', {
         uniqueIdentifier: uniqueIdentifier,
         userDetails: {
           phoneNumber: phoneNumber,

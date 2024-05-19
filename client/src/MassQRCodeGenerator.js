@@ -16,7 +16,7 @@ const MassQRCodeGenerator = () => {
       const codes = [];
       for (let i = 0; i < numberOfCodes; i++) {
         const uniqueIdentifier = generateRandomString();
-        const response = await axios.post('http://localhost:5000/generate-qrcode', {
+        const response = await axios.post('https://scanhubgen.vercel.app/generate-qrcode', {
           uniqueIdentifier: uniqueIdentifier,
           userDetails: {
             phoneNumber: '',

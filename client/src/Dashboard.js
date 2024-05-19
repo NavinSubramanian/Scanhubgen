@@ -41,7 +41,7 @@ export default function FullFeaturedCrudGrid() {
   React.useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('https://driver-qr.vercel.app/users');
+        const response = await axios.get('https://scanhubgen.vercel.app/users');
         // Transform the user data to match the column fields
         const transformedUsers = response.data
           .filter(user => user.userDetails && user.userDetails.personName) // Filter out undefined or missing data
@@ -99,7 +99,7 @@ export default function FullFeaturedCrudGrid() {
       :
       row)));
     try {
-      const response = await axios.put(`https://driver-qr.vercel.app/users/${userDetails._id}`, { userDetails });
+      const response = await axios.put(`https://scanhubgen.vercel.app/users/${userDetails._id}`, { userDetails });
       console.log(response.data)
       return updatedRow
     } catch (error) {

@@ -50,7 +50,7 @@ function QRCodeScanner() {
   const fetchUserDetails = async () => {
     try {
       const response = await axios.get(
-        `https://driver-qr.vercel.app/user-details/${uniqueNumber}`
+        `https://scanhubgen.vercel.app/user-details/${uniqueNumber}`
       );
       const user = response.data.user.userDetails;
       
