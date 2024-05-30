@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import NavbarMain from './components/NavbarMain'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHandHoldingDollar, faBusinessTime, faTruckMedical, faLifeRing } from '@fortawesome/free-solid-svg-icons'
+import { faHandHoldingDollar, faBusinessTime, faTruckMedical, faLifeRing, faBolt } from '@fortawesome/free-solid-svg-icons'
 
 import QR from './images/scan.jpg'
 import safety from './images/safety.jpg'
@@ -18,7 +18,7 @@ const HomePage = () => {
       <NavbarMain />
       <section className='mainLand'>
         <div className='leftLand'>
-          <img src={QR} style={{width:'90%',height:'60%'}} />
+          <img src={QR} style={{width:'100%',height:'60%'}} />
         </div>
         <div className='rightLand'>
           <h4>WELCOME TO SCANHUB</h4>
@@ -42,9 +42,9 @@ const HomePage = () => {
         </div>
         <div className='imageUs'>
           <img src={mission1} />
-          <img src='' />
-          <img src='' />
-          <img src='' />
+          <img src='https://t4.ftcdn.net/jpg/03/09/57/65/360_F_309576547_Jxmy5JOuRH3fbmaximA6wERriBEqxPW7.jpg' />
+          <img src='https://t3.ftcdn.net/jpg/05/62/81/44/360_F_562814486_ajlpRlDIoOkXK9FNxJr2W6caswQWDRGM.jpg' />
+          <img src='https://media.istockphoto.com/id/1293501978/vector/progress-development-as-success-improvement-and-growth-tiny-person-concept-professional.jpg?s=612x612&w=0&k=20&c=cSMUAGdB2D-Yah-5m6I-yC29cGYm74h8HP85054Li0E=' />
         </div>
       </section>
       <section className='howItWorks'>
@@ -54,12 +54,14 @@ const HomePage = () => {
             <h1>SCAN THE QR CODE</h1>
             <h3>AND SEE HOW IT WORKS!</h3>
           </div>
-          <Link to='/manual' style={{width:'50%'}}>
-            <button style={{backgroundColor:'transparent',border:'2px solid #333'}}>See the user manual</button>
+          <Link to='/manual' style={{width:'80%'}}>
+            <button className='card-btn'  style={{backgroundColor:'transparent',border:'2px solid #333'}}>See how the page will look like
+            <FontAwesomeIcon icon={faBolt} style={{color: "#100f0f", marginLeft: '8px'}} />
+            </button>
           </Link>
         </div>
       </section>
-      <h1 style={{margin:'20px 0',color:'#333',textAlign:'center',width:'100%'}}>Why use us?</h1>
+      <h1 style={{margin:'20px 0',color:'#333',textAlign:'center',width:'100%'}}>Why Us ?</h1>
       <section className='featureSection'>
         <div>
           <FontAwesomeIcon icon={faHandHoldingDollar}></FontAwesomeIcon>

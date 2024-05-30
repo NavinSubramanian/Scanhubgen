@@ -329,7 +329,7 @@ function QRCodeScanner() {
                     letterSpacing: "1px",
                   }}
                 >
-                  <p><b>Disease:</b> {userDetails.disease === "" ? "Nil" : userDetails.bloodGroup}</p>
+                  <p><b>Disease:</b> {userDetails.disease === "" ? "Nil" : userDetails.disease}</p>
                   <p><b>Allegries:</b> {userDetails.disease === "" ? "Nil" : userDetails.allergies}</p>
                   <p style={{ marginTop: "20px" }}>
                     <b>Regular hospital:</b> {userDetails.disease === "" ? "Nil" : userDetails.regularHospital}
